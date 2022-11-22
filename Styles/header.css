@@ -60,6 +60,19 @@
     margin-right: 2rem;
 }
 
+.header__boton{
+
+    background: #E6F7F5;
+    border-color: #91D8B4;
+    font-family: 'Raleway', sans-serif;
+    margin-left: 40%;
+    margin-top: 1rem;
+    width: 9rem;
+    height: 3rem;
+
+
+}
+
 .header__foto{
 
     width: 300px;
@@ -93,6 +106,11 @@
         display: flex;
         flex-direction: column-reverse;
         
+    }
+
+    .header__boton{
+
+        margin-left: 35%;
     }
 
     .header__foto{

@@ -36,6 +36,11 @@
     
 } 
 
+.contacto__contactarme__area{
+
+    width: 50%
+}
+
 .contacto__contactarme label, .contacto__contactarme__enviar{
 
     display: block;
@@ -80,8 +85,5 @@
         left: 36%;
     }
 
-    .contacto__contactarme__area{
 
-        width: 420px
-    }
 }
