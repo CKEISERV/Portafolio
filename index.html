@@ -19,17 +19,6 @@
     <link rel="stylesheet" type="text/css" href="Styles/contacto.css">
     <link rel="stylesheet" type="text/css" href="Styles/footer.css">
 
-    <script type="text/javascript">
-        function DownloadFromUrl(fileURL, fileName) {
-          var link = document.createElement('a');
-          link.href = fileURL;
-          link.download = fileName;
-          document.body.appendChild(link);
-          link.click();
-          document.body.removeChild(link);
-        }  
-      </script>
-
 </head>
 <body>
     <header class="header__portafolio container">
@@ -142,7 +131,7 @@
             <p class="contacto__email"><a href="mailto:cesar.villamizarg12@gmail.com">E-mail: cesar.villamizarg12@gmail.com </a></p>
         </div>
         
-        <button class="contacto__boton" onClick="DownloadFromUrl('http://127.0.0.1:5500/Cesar Villamizar-Curriculum vitae.pdf', 'Cesar Villamizar-Curriculum vitae.pdf')" > Decargar: Hoja de Vida</button>
+        <button class="contacto__boton"> <a download="Cesar Villamizar-Curriculum vitae.pdf" href="./Cesar Villamizar-Curriculum vitae.pdf">Descargar: Hoja de Vida</a> </button>
         
     </section>
 
