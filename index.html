@@ -18,6 +18,18 @@
     <link rel="stylesheet" type="text/css" href="Styles/proyectos.css">
     <link rel="stylesheet" type="text/css" href="Styles/contacto.css">
     <link rel="stylesheet" type="text/css" href="Styles/footer.css">
+
+    <script type="text/javascript">
+        function DownloadFromUrl(fileURL, fileName) {
+          var link = document.createElement('a');
+          link.href = fileURL;
+          link.download = fileName;
+          document.body.appendChild(link);
+          link.click();
+          document.body.removeChild(link);
+        }  
+      </script>
+
 </head>
 <body>
     <header class="header__portafolio container">
@@ -42,7 +54,7 @@
                     <li class="header__redes__lista"><a href="https://www.instagram.com/villamizar_adrian/">Instragram &#11127</a></li>
                     <li><a href="https://www.linkedin.com/in/cesar-villamizar-garcia-2a56a420a/">LinkedIn &#11127</a></li>
                 </ul>
-                <button class="header__boton"><a href="https://doc-0o-3c-apps-viewer.googleusercontent.com/viewer/secure/pdf/u9b3ectbfehjkulialp3hftd2phqilf0/sttmrmjsk429af171tcsv02oqgael1qb/1669159500000/drive/07607965544939057635/ACFrOgB1N_8Ct3C-syNeewAbg7fbLswqK_NCFoATj8PjKkHYPSuXvuLHhlmdhdJFs6gMQMimZR_QHZuI8JDVwSYg6DzhtMb-4RJcXAcxbF-66YkeccrTXjcf-EmA8iUhWy0SIXoYqpifjdDBLE4X?print=true&nonce=jotapr0a3v258&user=07607965544939057635&hash=ci9h4o36956c1d7do1sifsh41196oc5e">Hoja de vida</a></button>
+                
             </div>
             <img src="Imagenes/Foto.jpg" alt="Foto-CV" class= "header__foto">
         </section> 
@@ -129,24 +141,9 @@
             <p class="contacto__telefono"><a href="tel:+573102549403">Celular: +57 3102549403</a></p>
             <p class="contacto__email"><a href="mailto:cesar.villamizarg12@gmail.com">E-mail: cesar.villamizarg12@gmail.com </a></p>
         </div>
-        <div class="contacto__contactarme">
-            <form>
-                <p class="contacto__contactarme__parrafo">O completa el siguiente formulario y me pondré en contacto contigo</p>
-                <label for="nombreapellido" >Nombre y Apellido</label>
-                <input type="text" id="nombreapellido" class="contacto__contactarme__input" required>
-    
-                <label for="correo">Correo Electronico</label>
-                <input type="email" id="correo" class="contacto__contactarme__input" required placeholder="email@dominio.com">
-    
-                <label for="telefono">Telefono</label>
-                <input type="tel" id="telefono" class="contacto__contactarme__input" required placeholder="xxx xxx xxxx">
-    
-                <label for="mensaje">Mensaje</label>
-                <textarea  rows="10" id="mensaje" class="contacto__contactarme__area"></textarea>
-
-                <input type="submit" value="Enviar Formulario" class="contacto__contactarme__enviar"> 
-            </form>
-        </div>
+        
+        <button class="contacto__boton" onClick="DownloadFromUrl('http://127.0.0.1:5500/Cesar Villamizar-Curriculum vitae.pdf', 'Cesar Villamizar-Curriculum vitae.pdf')" > Decargar: Hoja de Vida</button>
+        
     </section>
 
     <footer class="footer">
